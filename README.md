@@ -1,20 +1,26 @@
-#🧠 First MLOps Deployment: E-commerce Price Predictor
+# First MLOps Deployment: E-commerce Price Predictor
 
 This repository demonstrates a foundational, end-to-end Machine Learning Operations (MLOps) pipeline for model serving and deployment using FastAPI and Docker.
 
 The project simulates a real-world price prediction service for an e-commerce platform — built, packaged, and deployed in a production-ready containerized environment.
 
-⚙️ Architecture & Tech Stack
+# Architecture & Tech Stack
 
 This project emphasizes engineering rigor, reproducibility, and scalability.
 
-Layer	Tool/Tech	Purpose
+# Layer	Tool/Tech	Purpose
 Framework	        🌀    FastAPI	High-performance, asynchronous REST API for model serving
+
 Modeling	        📈    Scikit-learn	Simple regression model trained on simulated pricing data
+
 Serialization	    💾    Joblib	Efficient saving/loading of model artifacts (model.pkl)
+
 Validation	      🧩    Pydantic	Strict input schema enforcement for API requests
+
 Containerization	🐳    Docker	Ensures reproducible, platform-independent deployment
-🛠️ Deployment Instructions
+
+
+# Deployment Instructions
 
 The entire pipeline is containerized. Ensure Docker Desktop is running before proceeding.
 
@@ -34,14 +40,18 @@ Expand POST /predict
 
 Click “Try it out” → Enter sample input → Test live predictions 🚀
 
-🧩 Code Structure
-├── app.py              # FastAPI app: loads model, serves predictions
+# Code Structure
+├── app.py    # FastAPI app: loads model, serves predictions
+
 ├── train_model.py      # Trains & exports the model.pkl artifact
+
 ├── Dockerfile          # Builds the production container image
+
 ├── requirements.txt    # Lists essential dependencies
+
 └── README.md           # Project overview and instructions
 
-🧱 Key Highlights
+# Key Highlights
 
 ✅ End-to-End Workflow: From model training → API deployment → Dockerized serving
 
@@ -51,7 +61,7 @@ Click “Try it out” → Enter sample input → Test live predictions 🚀
 
 ☁️ Ready for Cloud: Fully portable to AWS, GCP, or Render
 
-🔮 Next Steps (Future Enhancements)
+# Next Steps (Future Enhancements)
 
 Add CI/CD workflow via GitHub Actions
 
