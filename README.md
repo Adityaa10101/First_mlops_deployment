@@ -1,3 +1,5 @@
+#🧠 First MLOps Deployment: E-commerce Price Predictor
+
 This repository demonstrates a foundational, end-to-end Machine Learning Operations (MLOps) pipeline for model serving and deployment using FastAPI and Docker.
 
 The project simulates a real-world price prediction service for an e-commerce platform — built, packaged, and deployed in a production-ready containerized environment.
